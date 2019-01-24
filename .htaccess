@@ -1,0 +1,130 @@
+Options +FollowSymLinks
+
+<FilesMatch "(endpoint|endpoint-cors)\.php$">
+    Allow from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteBase /IonPot-AddressBook/
+
+RewriteCond %{HTTPS} off
+# First rewrite to HTTPS:
+# Not putting www. here. If it is already there it will be included, if not
+# the subsequent rule will catch it.
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Now, rewrite any request to the wrong domain to use www.
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+ErrorDocument 404 /IonPot-AddressBook/index.php?page_key=404
+
+RewriteRule ^account/recover$ index.php?page_key=forgot-reset [L,QSA]
+
+RewriteRule ^(login|logout|contact|member)/$ index.php?page_key=$1 [L,QSA]
+RewriteRule ^(login|logout|contact|member)$ $1/ [L,R=301,QSA]
+
+RewriteRule ^contact/$ index.php?page_key=contact [L,QSA]
+RewriteRule ^contact$ contact/ [L,R=301,QSA]
+
+RewriteRule ^contact/ajax/$ index.php?page_key=contact&request-type=ajax [L,QSA]
+RewriteRule ^contact/ajax$ contact/ajax/ [L,R=301,QSA]
+
+RewriteRule ^member/ajax/$ index.php?page_key=member&request-type=ajax [L,QSA]
+RewriteRule ^member/ajax$ member/ajax/ [L,R=301,QSA]
+
+RewriteRule ^contact/favorites/$ index.php?page_key=contact&tag=favorites [L,QSA]
+RewriteRule ^contact/favorites$ contact/favorites/ [L,R=301,QSA]
+
+RewriteRule ^contact/ajax/favorites/$ index.php?page_key=contact&request-type=ajax&tag=favorites [L,QSA]
+RewriteRule ^contact/ajax/favorites$ contact/ajax/favorites/ [L,R=301,QSA]
+
+RewriteRule ^contact/add/$ index.php?page_key=contact-add [L,QSA]
+RewriteRule ^contact/add$ contact/add/ [L,R=301,QSA]
+
+RewriteRule ^contact/edit/([0-9]+)/$ index.php?page_key=contact-edit&id=$1 [L,QSA]
+RewriteRule ^contact/edit/([0-9]+)$ contact/edit/ [L,R=301,QSA]
+
+RewriteRule ^contact/favorite/([0-9]+)/([0-9]+)/$ index.php?page_key=favorite&isfavorite=$1&id=$2 [L,QSA]
+RewriteRule ^contact/favorite([0-9]+)/([0-9]+)$ contact/favorite/([0-9]+)/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^contact/export/$ index.php?page_key=contact-export [L,QSA]
+RewriteRule ^contact/export$ contact/export/ [L,R=301,QSA]
+
+RewriteRule ^contact/view/modal/([0-9]+)/$ index.php?page_key=contact-view-modal&id=$1 [L,QSA]
+RewriteRule ^contact/view/modal([0-9]+)/ contact/view/modal/ [L,R=301,QSA]
+
+RewriteRule ^contact/member/edit/([0-9]+)/$ index.php?page_key=member-edit&id=$1 [L,QSA]
+RewriteRule ^contact/member/edit/([0-9]+)$ contact/member/edit/ [L,R=301,QSA]
+
+RewriteRule ^contact/member/add/$ index.php?page_key=member-add [L,QSA]
+RewriteRule ^contact/member/add$ contact/member-add/ [L,R=301,QSA]
+
+RewriteRule ^contact/version/modal/$ index.php?page_key=about-version [L,QSA]
+RewriteRule ^contact/version/modal$ contact/version/modal/ [L,R=301,QSA]
+
+RewriteRule ^contact/edit/([0-9]+)/$ index.php?page_key=contact-edit&id=$1 [L,QSA]
+RewriteRule ^contact/edit/([0-9]+)$ contact/edit/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^contact/delete/([0-9]+)/$ index.php?page_key=contact-delete&id=$1 [L,QSA]
+RewriteRule ^contact/delete/([0-9]+)$ contact/delete/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^member/delete/([0-9]+)/$ index.php?page_key=member-delete&id=$1 [L,QSA]
+RewriteRule ^member/delete/([0-9]+)$ member/delete/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^contact/view/([0-9]+)/$ index.php?page_key=contact-view&id=$1 [L,QSA]
+RewriteRule ^contact/view/([0-9]+)$ contact/view/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^contact/add-success$ index.php?page_key=contact&status=add-success [L,QSA]
+RewriteRule ^contact/add-success$ contact/add-success [L,R=301,QSA]
+
+RewriteRule ^contact/delete-success$ index.php?page_key=contact&status=delete-success [L,QSA]
+RewriteRule ^contact/delete-success$ contact/delete-success [L,R=301,QSA]
+
+RewriteRule ^contact/editsuccess$ index.php?page_key=contact-view&status=editsuccess [L,QSA]
+RewriteRule ^contact/editsuccess$ contact/editsuccess [L,R=301,QSA]
+
+RewriteRule ^contact/view/([0-9]+)/success/$ index.php?page_key=contact-view&status=editsuccess&id=$1 [L,QSA]
+RewriteRule ^contact/view/([0-9]+)/success$ contact/view/([0-9]+)/success/ [L,R=301,QSA]
+
+RewriteRule ^contact/([0-9]+)/$ index.php?page_key=contact-delete&id=$1 [L,QSA]
+RewriteRule ^contact/([0-9]+)$ contact/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^contact/edit/photo/delete/([0-9]+)/$ index.php?page_key=photo-delete&id=$1 [L,QSA]
+RewriteRule ^contact/edit/photo/delete/([0-9]+)$ contact/edit/photo/delete/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^contact/custom/delete/([0-9]+)/$ index.php?page_key=custom-delete&id=$1 [L,QSA]
+RewriteRule ^contact/custom/delete/([0-9]+)$ contact/custom/delete/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^login/$ index.php?page_key=login [L]
+RewriteRule ^login$ login/ [L,R=301]
+
+RewriteRule ^logout/$ index.php?page_key=logout [L]
+RewriteRule ^logout$ logout/ [L,R=301]
+
+RewriteRule ^contact/admin/edit/$ index.php?page_key=admin-edit [L,QSA]
+RewriteRule ^contact/admin/edit$ contact/admin/edit/ [L,R=301,QSA]
+
+RewriteRule ^contact/favorite-list/$ index.php?page_key=favorite-list [L,QSA]
+RewriteRule ^contact/favorite-list$ contact/favorite-list/ [L,R=301,QSA]
+
+RewriteRule ^contact/filter/$ index.php?page_key=filter [L,QSA]
+RewriteRule ^contact/filter$ contact/filter/ [L,R=301,QSA]
+
+RewriteRule ^contact/common-search/$ index.php?page_key=common-search [L,QSA]
+RewriteRule ^contact/common-search$ contact/common-search/ [L,R=301,QSA]
+
+RewriteRule ^contact/vcard/export/([0-9]+)/$ index.php?page_key=vcard-export&id=$1 [L,QSA]
+RewriteRule ^contact/vcard/export/([0-9]+)$ contact/vcard/export/([0-9]+)/ [L,R=301,QSA]
+
+RewriteRule ^contact/vcard/export/$ index.php?page_key=vcard-all-export [L,QSA]
+RewriteRule ^contact/vcard/export$ contact/vcard/export/ [L,R=301,QSA]
+
+RewriteRule ^forgot/$ index.php?page_key=forgot [L]
+RewriteRule ^forgot$ forgot/ [L,R=301]
+
+RewriteRule ^contact/import/$ index.php?page_key=contact-import [L,QSA]
+RewriteRule ^contact/import$ contact/import/ [L,R=301,QSA]
+
+# Character encodings
+AddDefaultCharset utf-8

@@ -1,0 +1,150 @@
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Common\AntiCSRF.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 94 | WARNING | Line exceeds 120 characters; contains 157 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Common\Dao.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 3 WARNINGS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  42 | WARNING | Line exceeds 120 characters; contains 123 characters
+ 150 | WARNING | Line exceeds 120 characters; contains 123 characters
+ 332 | WARNING | Line exceeds 120 characters; contains 148 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Common\EntityDaoDecorator.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 119 | WARNING | Line exceeds 120 characters; contains 122 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Common\ErrorHandler.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 5 WARNINGS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 32 | WARNING | Line exceeds 120 characters; contains 231 characters
+ 38 | WARNING | Line exceeds 120 characters; contains 229 characters
+ 53 | WARNING | Line exceeds 120 characters; contains 129 characters
+ 61 | WARNING | Line exceeds 120 characters; contains 127 characters
+ 62 | WARNING | Line exceeds 120 characters; contains 133 characters
+----------------------------------------------------------------------
+
+
+FILE: ...:\xampp\htdocs\ionpot-addressbook\Common\GenericDaoDecorator.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 73 | WARNING | Line exceeds 120 characters; contains 122 characters
+ 75 | WARNING | Line exceeds 120 characters; contains 121 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Common\Util.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 94 | WARNING | Line exceeds 120 characters; contains 152 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Controller.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 127 | WARNING | Line exceeds 120 characters; contains 135 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Model\Contact.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 132 | WARNING | Line exceeds 120 characters; contains 122 characters
+ 140 | WARNING | Line exceeds 120 characters; contains 138 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\Service\UploadHandler.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 136 | WARNING | Line exceeds 120 characters; contains 143 characters
+ 212 | WARNING | Line exceeds 120 characters; contains 122 characters
+ 289 | WARNING | Line exceeds 120 characters; contains 128 characters
+ 470 | WARNING | Line exceeds 120 characters; contains 128 characters
+----------------------------------------------------------------------
+
+
+FILE: ...cs\ionpot-addressbook\Template\reset-password-email-template.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 3 WARNINGS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  7 | WARNING | Line exceeds 120 characters; contains 121 characters
+ 16 | WARNING | Line exceeds 120 characters; contains 295 characters
+ 78 | WARNING | Line exceeds 120 characters; contains 325 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\view\404.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 63 | WARNING | Line exceeds 120 characters; contains 152 characters
+ 65 | WARNING | Line exceeds 120 characters; contains 132 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\view\contact-edit-modal.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 206 | WARNING | Line exceeds 120 characters; contains 183 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\view\contact-list-ajax.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 22 | WARNING | Line exceeds 120 characters; contains 124 characters
+ 53 | WARNING | Line exceeds 120 characters; contains 157 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\view\contact-view-modal.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  53 | WARNING | Line exceeds 120 characters; contains 156 characters
+  61 | WARNING | Line exceeds 120 characters; contains 150 characters
+ 112 | WARNING | Line exceeds 120 characters; contains 156 characters
+ 167 | WARNING | Line exceeds 120 characters; contains 129 characters
+----------------------------------------------------------------------
+
+
+FILE: ...p\htdocs\ionpot-addressbook\view\fine-uploader\endpoint-cors.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  87 | WARNING | Line exceeds 120 characters; contains 133 characters
+ 112 | WARNING | Line exceeds 120 characters; contains 136 characters
+----------------------------------------------------------------------
+
+
+FILE: D:\xampp\htdocs\ionpot-addressbook\view\member-list-ajax.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 36 | WARNING | Line exceeds 120 characters; contains 163 characters
+ 49 | WARNING | Line exceeds 120 characters; contains 156 characters
+----------------------------------------------------------------------
+
+Time: 539ms; Memory: 8Mb
+
