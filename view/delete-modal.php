@@ -13,6 +13,7 @@
         <button class="btn-outline btn-cancel cursor-pointer"
             name="cancel" type="button">
             <span>Cancel</span>
+            <!-- <span>Cancel</span> -->
         </button>
     </div>
     <?php require_once 'framework/form-footer.php';?>

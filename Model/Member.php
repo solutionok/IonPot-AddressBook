@@ -18,8 +18,7 @@ class Member extends EntityDaoDecorator
     /*
      * Check ADMIN LOGIN
      */
-    public function editById($userid)
-    {
+    public function editById($userid) {
         $ary = $this->processUIForm();
         $id = $this->update($ary, "id", $userid, "i");
         return $id;

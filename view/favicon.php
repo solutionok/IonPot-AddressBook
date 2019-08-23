@@ -9,3 +9,4 @@
     href="<?php echo WORK_ROOT;?>safari-pinned-tab.svg" color="#009688">
 <meta name="theme-color" content="#ffffff">
 <link rel="shortcut icon" href="<?php echo WORK_ROOT;?>favicon.ico" />
+<!-- <link rel="shortcut icon" href="<?php echo WORK_ROOT;?>favicon.ico" /> -->

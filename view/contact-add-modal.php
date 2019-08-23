@@ -25,8 +25,7 @@
             <div class="col" style="margin-right:12px;">
                 <div class="label">Mobile:</div>
                 <div class="field">
-                    <input type="text" name="user_mobile_no"
-                        id="user_mobile_no">
+                    <input type="text" name="user_mobile_no" id="user_mobile_no">
                 </div>
             </div>
             <div class="col">

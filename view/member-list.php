@@ -38,8 +38,7 @@
 <script src="<?php echo WORK_ROOT; ?>view/js/member.js"></script>
 <script src="<?php echo WORK_ROOT; ?>view/js/contact.js"></script>
 <title>List - <?php echo APP_NAME; ?></title>
-<link href="<?php echo WORK_ROOT;?>view/css/style.css" rel="stylesheet"
-    type="text/css" />
+<link href="<?php echo WORK_ROOT;?>view/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="wrapper">

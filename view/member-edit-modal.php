@@ -22,9 +22,7 @@
                 </div>
                 <div class="field">
                     <input type="text" name="email" id="email"
-                        value="<?php
-                        $u->xecho($result[0]["email"]);
-                        ?>">
+                        value="<?php $u->xecho($result[0]["email"]);?>">
                 </div>
             </div>
         </div>

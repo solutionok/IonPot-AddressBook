@@ -9,10 +9,6 @@
                     onClick="openDialog('<?php echo WORK_ROOT; ?>','contact/add/','Add Contact','',true,true)">+
                 </span>
             </div>
-            <!--            <a class="header-link" href="<?php echo WORK_ROOT; ?>admin/edit/">Settings</a>-->
-            <!--<a class="header-link" title="Logout"
-                href="<?php echo WORK_ROOT; ?>logout/"><img
-                src="<?php echo WORK_ROOT;?>view/image/menu.png" width="32px"></a>-->
             <div class="right-dropdown">
                 <img id="menu" class="cursor-pointer"
                     src="<?php echo WORK_ROOT;?>view/image/menu.png">

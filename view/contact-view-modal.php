@@ -41,6 +41,7 @@
         </div>
     </div>
     <!-- row close -->
+    <!-- row close -->
 
     <?php if ((!empty($result[0]["destination"])) || (!empty($result[0]["relationship"]))) { ?>
      <div class="border-contain margin-bottom">

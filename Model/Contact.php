@@ -15,8 +15,7 @@ class Contact extends EntityDaoDecorator
 
     public $tblName = "tbl_contact";
 
-    public function processUIForm()
-    {
+    public function processUIForm(){
         $ary = null;
         U::buildAry($ary, "name", ltrim($_POST["name"]));
         U::buildAry($ary, "nick_name", $_POST["nick_name"]);

@@ -16,9 +16,7 @@
         </tr>
     </thead>
     <tbody>
-    <?php
-    foreach ($result as $k => $v) {
-        ?>
+    <?php foreach ($result as $k => $v) { ?>
             <tr>
             <td class="priority-1"><span> <?php $u->xecho($result[$k]["username"]); ?></span></td>
             <td class="priority-2"><?php $u->xecho($result[$k]["email"]); ?></td>

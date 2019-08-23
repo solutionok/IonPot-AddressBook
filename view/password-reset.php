@@ -32,7 +32,7 @@
                 <div class="er-message" id="txt-message">&nbsp;
                 <?php
                 if (isset($message)) {
-                    echo $message;
+                    echo $message;;
                 }
                 ?></div>
                 <?php

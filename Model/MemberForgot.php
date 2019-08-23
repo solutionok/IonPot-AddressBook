@@ -15,8 +15,7 @@ class MemberForgot extends EntityDaoDecorator
 
     public $tblName = "tbl_member_forgot";
 
-    public function addRecovery($memberId)
-    {
+    public function addRecovery($memberId) {
         $ary = null;
         U::buildAry($ary, "member_id", $memberId);
         $resetToken = $this->getToken(97);

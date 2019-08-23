@@ -26,6 +26,7 @@
     </div>
     </div>
     <!-- modal-box -->
+    <!-- modal-box -->
     <div class="row form-btn">
         <span id="HideaddPassword">
             <button class="btn-outline btn-save" name="addPassword"

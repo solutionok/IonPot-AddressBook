@@ -5,10 +5,8 @@
         <div class="row">
             <div class="col">
                 <div class="md-10">
-                    <span>Download <a
-                        href="<?php echo WORK_ROOT; ?>Template/Contact-Import-Template.csv"
-                        class="help-txt">TEMPLATE FILE </a>and use it to
-                        import.
+                    <span>
+                        Download <a href="<?php echo WORK_ROOT; ?>Template/Contact-Import-Template.csv" class="help-txt">TEMPLATE FILE </a>and use it to import.
                     </span>
                 </div>
                 <input name="fileToUpload" type="file"

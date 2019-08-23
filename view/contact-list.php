@@ -1,6 +1,4 @@
-<?php
-require_once "Common/SessionValidate.php";
-?>
+<?php require_once "Common/SessionValidate.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

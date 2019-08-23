@@ -33,6 +33,7 @@
             <div class="col float-right">
                 <div class="label ">Role</div>
                 <div class="field">
+                    
                     <select name="role" class="input-width">
                         <option value="Member">Member</option>
                         <option value="Admin">Admin</option>

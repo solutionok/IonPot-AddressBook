@@ -33,8 +33,8 @@ body {
                     echo $message;
                 }
                 ?></div>
-<?php if (!isset($emailsent)) { ?>
-<div class="form-row">
+                <?php if (!isset($emailsent)) { ?>
+                <div class="form-row">
                     <div class="form-label">
                         Email: <span class="error" id="email_info"></span>
                     </div>

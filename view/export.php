@@ -21,6 +21,7 @@ if($result){
         header('Content-Disposition: attachment; filename="export.csv"');
         header('Pragma: no-cache');
         header('Expires: 0');
+        // header('Expires: 0');
         fputcsv($fp, $headers);
         foreach ($result as $i=>$k) {
             fputcsv($fp, [

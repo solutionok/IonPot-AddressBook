@@ -7,8 +7,7 @@
                     Name: <span class="required" id="reg_name_info"></span>
                 </div>
                 <div class="field">
-                    <input type="text" name="name" id="name"
-                        value="<?php $u->xecho($result[0]["name"]);?>">
+                    <input type="text" name="name" id="name" value="<?php $u->xecho($result[0]["name"]);?>">
                 </div>
             </div>
             <div class="col">

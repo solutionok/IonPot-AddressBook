@@ -15,8 +15,7 @@ class Group extends EntityDaoDecorator
 
     public $tblName = "tbl_contact_group";
 
-    public function processUIGroup($id, $index)
-    {
+    public function processUIGroup($id, $index) {
         $ary = null;
         U::buildAry($ary, "contact_id", $id);
         U::buildAry($ary, "group_name", $index);

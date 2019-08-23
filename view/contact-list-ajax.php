@@ -1,4 +1,3 @@
-<?php // if (!empty($result)) {   ?>
 <table>
     <thead>
         <tr class="search-row">

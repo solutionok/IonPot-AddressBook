@@ -14,8 +14,7 @@ class Custom extends EntityDaoDecorator
 
     public $tblName = "tbl_contact_custom";
 
-    public function processUICustom($id, $index)
-    {
+    public function processUICustom($id, $index) {
         $ary = null;
         U::buildAry($ary, "contact_id", $id);
         U::buildAry($ary, "label", $_POST["label"][$index]);

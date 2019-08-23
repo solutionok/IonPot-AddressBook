@@ -27,8 +27,7 @@ body {
                 </div>
                 <div class="form-row">
                     <div class="form-label">
-                        Username: <span class="error"
-                            id="member_name_info"></span>
+                        Username: <span class="error" id="member_name_info"></span>
                     </div>
                     <div id="login-div" class="form-element">
                         <input class="login-input" type="input"
